@@ -7,6 +7,7 @@ public class ShapeMain {
       System.err.println("Parameter of type RegularShapeType is required.");
       return;
     }
+    /**
     try {
       RegularShapeType type = RegularShapeType.valueOf(args[0]);
       Shape shape = ShapeFactory.create(type);
@@ -14,7 +15,7 @@ public class ShapeMain {
         String.format(
           "Successfully created a %s with %s sides.",
           type,
-          shape.getNumberOfEdges()
+          "shape.getNumberOfEdges()"
         )
       );
     } catch (IllegalArgumentException ex) {
@@ -22,6 +23,8 @@ public class ShapeMain {
         "Parameter '" + args[0] + "' is not a valid RegularShapeType"
       );
       return;
+
     }
+    */
   }
 }
